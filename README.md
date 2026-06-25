@@ -1,6 +1,6 @@
-# market-open-sentinel
+# Python Market Monitoring Automation
 
-한국시간 오후 10시 30분, 미국 서머타임 기준 미국 본장 개장 시각에 주요 글로벌 시장 지표를 점검하고 Discord Webhook으로 한국어 요약 알림을 보내는 Python 프로젝트입니다.
+한국시간 오후 10시 30분, 미국 서머타임 기준 미국 본장 개장 시각에 주요 글로벌 시장 지표를 점검하고 Discord Webhook으로 한국어 요약 알림을 보내는 GitHub Actions 기반 시장 지표 자동 리포트 프로젝트입니다.
 
 이 프로젝트는 투자 판단 자동화가 아니라, 시장 지표를 정해진 시간에 수집하고 규칙 기반 리포트를 생성하는 자동화/모니터링 시스템입니다.
 
