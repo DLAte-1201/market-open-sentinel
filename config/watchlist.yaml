@@ -1,0 +1,166 @@
+# 데이터 제공자 사정에 따라 티커가 바뀔 수 있음.
+indicators:
+  - key: btc
+    name: BTC
+    source: yfinance
+    ticker: BTC-USD
+    category: risk_asset
+    section: risk_assets
+    unit: 달러
+    change_type: percent
+    decimals: 0
+    thresholds: {up: 1.0, down: -1.0}
+
+  - key: eth
+    name: ETH
+    source: yfinance
+    ticker: ETH-USD
+    category: risk_asset
+    section: risk_assets
+    unit: 달러
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 1.0, down: -1.0}
+
+  - key: gold
+    name: 금
+    source: yfinance
+    ticker: GC=F
+    category: metal
+    section: commodities
+    unit: 달러
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 1.0, down: -1.0}
+
+  - key: silver
+    name: 은
+    source: yfinance
+    ticker: SI=F
+    category: metal
+    section: commodities
+    unit: 달러
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 1.0, down: -1.0}
+
+  - key: nasdaq
+    name: 나스닥
+    source: yfinance
+    ticker: ^IXIC
+    category: risk_asset
+    section: risk_assets
+    unit: 포인트
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 1.0, down: -1.0}
+
+  - key: usdkrw
+    name: USD/KRW
+    source: yfinance
+    ticker: KRW=X
+    category: currency
+    section: rates_fx
+    unit: 원
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 0.5, down: -0.5}
+
+  - key: us10y
+    name: 미국 10년물
+    source: fred
+    series_id: DGS10
+    category: rate
+    section: rates_fx
+    unit: "%"
+    change_type: bp
+    decimals: 2
+    thresholds: {up: 5.0, down: -5.0}
+
+  - key: us2y
+    name: 미국 2년물
+    source: fred
+    series_id: DGS2
+    category: rate
+    section: rates_fx
+    unit: "%"
+    change_type: bp
+    decimals: 2
+    thresholds: {up: 5.0, down: -5.0}
+
+  - key: nasdaq100_futures
+    name: 나스닥100 선물
+    source: yfinance
+    ticker: NQ=F
+    category: risk_asset
+    section: risk_assets
+    unit: 포인트
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 1.0, down: -1.0}
+
+  - key: dow
+    name: 다우
+    source: yfinance
+    ticker: ^DJI
+    category: risk_asset
+    section: risk_assets
+    unit: 포인트
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 1.0, down: -1.0}
+
+  - key: sp500
+    name: S&P 500
+    source: yfinance
+    ticker: ^GSPC
+    category: risk_asset
+    section: risk_assets
+    unit: 포인트
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 1.0, down: -1.0}
+
+  - key: wti
+    name: WTI
+    source: yfinance
+    ticker: CL=F
+    category: oil
+    section: commodities
+    unit: 달러
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 2.0, down: -2.0}
+
+  - key: brent
+    name: 브렌트유
+    source: yfinance
+    ticker: BZ=F
+    category: oil
+    section: commodities
+    unit: 달러
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 2.0, down: -2.0}
+
+  - key: dxy
+    name: 달러 인덱스
+    source: yfinance
+    ticker: DX-Y.NYB
+    category: dollar
+    section: rates_fx
+    unit: 포인트
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 0.5, down: -0.5}
+
+  - key: sox
+    name: 필라델피아 반도체
+    source: yfinance
+    ticker: ^SOX
+    category: risk_asset
+    section: risk_assets
+    unit: 포인트
+    change_type: percent
+    decimals: 2
+    thresholds: {up: 1.0, down: -1.0}
