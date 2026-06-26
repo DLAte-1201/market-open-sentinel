@@ -2,7 +2,7 @@ name: Market Open Check
 
 on:
   schedule:
-    - cron: "30 13 * * 1-5"
+    - cron: "35 15 * * 0-6"
   workflow_dispatch:
 
 jobs:
